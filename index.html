@@ -14,16 +14,105 @@
             <img src="logoCLR.png" alt="Logo" width="70" height="70">
             <h3>ADUN Exeat Management System</h3>
         </header>
-        <div class="login-box">
-            <p>LOGIN</p>
+        <form class="login-box">
+            <p>Register</p>
             <div class="login">
+                <label for="fname">Firstname:</label>
+                <input type="text" name="fname" id="fname" required>
+
+                <label for="lname">Lastname:</label>
+                <input type="text" name="lname" id="lname" required >
+
                 <label for="matricNo">Matric Number:</label>
                 <input type="text" name="matricNo" id="matricNo">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
-                <input type="submit" value="LOGIN" class="btn btn-danger">
+                
+                
+                <label>Gender:</label>
+                <div id="gender">
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender" value="female">
+                </div>
+           
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+
+                <label for="state">State of Origin:</label>
+                <input type="text" name="state" id="state" required>
+
+                <label for="lga">L.G.A:</label>
+                <input type="text" name="lga" id="lga" required>
+
+                <label for="address">Residential address:</label>
+                <input type="text" name="address" id="address" required>
+
+                <label for="phone">Phone NO:</label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="faculty">Faculty:</label>
+
+                <select name="faculty" id="faculty" required>
+                <option value="FOS">Science</option>
+                <option value="FAMSS">Management and Social Sciences</option>
+                <option value="Law">Law</option>
+                </select>
+
+                <label for="dept">Department:</label>
+                <input type="text" name="dept" id="dept" required>
+
+                <label for="program">Program:</label>
+                <input type="text" name="program" id="program" required>
+
+                <label for="year">Year of Entry:</label>
+
+                <select name="year" id="year" required>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                </select>
+
+                <label for="level">Level of Entry:</label>
+
+                <select name="level" id="level" required>
+                <option value="100">Year 1</option>
+                <option value="200">Year 2</option>
+                <option value="300">Year 3</option>
+                <option value="400">Year 4</option>
+                </select>
+
+                <label for="photo">Upload a Photograph:</label>
+                <input type="file" name="photo" id="photo" accept="image/*" required>
+
+
+                <label for="sponsor">Sponsor Type:</label>
+
+                <select name="sponsor" id="sponsor" required>
+                <option value="parent">Parent</option>
+                <option value="guardian">Guardian</option>
+                <option value="amnesty">Presidential Amnesty Program(PAP)</option>
+                </select>
+
+                <label for="sphone">Sponsor's Phone NO:</label>
+                <input type="tel" name="sphone" id="sphone" required>
+
+                <label for="saddress">Sponsor's address:</label>
+                <input type="text" name="saddress" id="saddress" required>
+
+               
+                <label for="password">Enter a Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="cpassword">Confirm Password:</label>
+                <input type="cpassword" name="cpassword" id="cpassword" required>
+
+                <input type="submit" value="Register" class="btn btn-danger">
             </div>
-        </div>
+        </form>
         <footer></footer>
     </div>
 </body>
